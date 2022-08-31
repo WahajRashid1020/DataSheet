@@ -6,7 +6,9 @@ const HkStudentList = () => {
   const [students, setStudents] = useState([]);
   const [regno, setRegno] = useState(null);
   useEffect(() => {
-    axios.get("/api/students").then((students) => setStudents(students.data));
+    axios
+      .get("/api/students")
+      .then((students) => setStudents(students), console.log(students));
   }, []);
   let handleClick = (regno) => {
     console.log(regno);
