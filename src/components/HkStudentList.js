@@ -30,7 +30,7 @@ const HkStudentList = () => {
             </tr>
           </thead>
           <tbody style={{ textAlign: "center" }}>
-            {students.map((student) => (
+            {students?.map((student) => (
               <tr key={student._id}>
                 <td>{student.regno}</td>
                 <td>
