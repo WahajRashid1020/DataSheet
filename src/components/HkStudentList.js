@@ -8,7 +8,7 @@ const HkStudentList = () => {
   useEffect(() => {
     axios
       .get("/api/students")
-      .then((students) => setStudents(students), console.log(students));
+      .then((students) => setStudents(students.data), console.log(students));
   }, []);
   let handleClick = (regno) => {
     console.log(regno);
