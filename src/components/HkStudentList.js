@@ -14,7 +14,7 @@ const HkStudentList = () => {
   };
   let showUpdated = (student) => {
     //console.log('updated', std);
-    setStudents(students.map((s) => (s._id === student._id ? student : s)));
+    setStudents(students?.map((s) => (s._id === student._id ? student : s)));
     setRegno(null);
   };
   let url = `#`;
